@@ -1,0 +1,247 @@
+@media(min-width: 360px){
+	#header {
+		display: none;
+	}
+
+	#home {
+		margin-top: 60px;
+	}
+
+	#mobile-header {
+		height: 60px!important;
+		position: fixed;
+	}
+
+	.mobile-header {
+	    position: sticky;
+	    top: 0;
+	    z-index: 999;
+	    background-color: black;
+	    width: 100%;
+	    transition: all 450ms ease-in-out;
+	    box-shadow: 0 0 2px rgba(50, 50, 50, 0.4);
+	}
+
+	.mobile-header-logo-block {
+		width: 15%;
+		/*margin-left: 4%;*/
+		position: absolute;
+		top: 0;
+		left: 4%;
+    }
+ 
+	.menu-list {
+	    list-style: none;
+	    padding: 0;
+	    margin: 0;
+	    display: flex;
+
+	}
+
+	.menu-item-link {
+	    display: block;
+	    padding: 10px 15px;
+	    text-decoration: none;
+	    font-size: 1rem;
+	    font-weight: 400;
+	    color: #aaa;
+	}
+
+	.menu-item-link:hover {
+        color: #aaa;
+    }
+
+    .menu-item-link.active {
+        color: #ccc;
+    }
+
+	.menu-content {
+	    display: none;
+	    /*@mixin largeScreen{
+	        display: block;
+	    }*/
+	}
+
+	.mobile-header-icon {
+	    position: absolute;
+	    cursor: pointer;
+	    width: 30px;
+	    height: 19px;
+	/*    background-color: $mainBlue;*/
+	    top: 20px;
+	    right: 30px;
+	    
+	    /*@mixin largeScreen{
+	        display: none;
+	    }*/
+	}
+	.mobile-header-icon::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        transform-origin: 0 0;
+        transition: transform .3s ease-out;
+    }
+    .mobile-header-icon-bar {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        transform-origin: 0 50%;
+        transition: transform .3s ease-out;
+    }
+    .mobile-header-icon::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        transform-origin: 0 100%;
+        transition: transform .3s ease-out;
+    }
+   
+    .mobile-header-icon-close::before {
+        transform: rotate(45deg) scaleX(0.85);
+    }
+    .mobile-header-icon-close .mobile-header-icon-bar {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+    .mobile-header-icon-close::after {
+        transform: rotate(-45deg) scaleX(0.85) translateY(1px);
+    }
+
+	.mobile-menu {
+	    opacity: 0;
+	    display: none;
+	}
+	.mobile-menu-active {
+        opacity: 1;
+        display: block;
+    }
+    .mobile-menu-list {
+        list-style: none;
+        background-color: black;
+        padding: 0;
+        padding-top: 106px;
+    }
+    .mobile-menu-list li:first-child {
+    	border-top: solid 1px #ccc;
+    }
+    .mobile-menu-list-item {
+        border-bottom: solid 1px #ccc;
+        padding-left: 30px;
+    }
+    .mobile-menu-list-item a {
+    	font-weight: 300;
+    	color: white;
+    }
+
+    ul li.mobile-menu-list-item a:hover {
+		color: #9e7f32;
+		font-weight: 200;
+	}
+
+	.mobile-menu-list-item {
+        border-bottom: solid 1px #ccc;
+        padding-left: 30px;
+    }
+
+    #footer {
+    	display: none;
+    }
+    #mobile-footer {
+    	display: block;
+    	text-align: center;
+    }
+
+    #overview .details, #amenities .details {
+    	margin-left: 10%;
+    	margin-right: 10%;
+    }
+
+    #location .details {
+    	margin-left: 10%;
+    	margin-right: 10%;
+  		margin-bottom: 10%;
+    }
+
+    #contact-us .part {
+    	padding: 40px 80px;
+    }
+
+    #floor ul li {
+    	width: calc(98%/3);
+    }
+
+    #floor .overlay-heading {
+    	font-size: 10px;
+    }
+}
+
+@media(min-width: 768px) {
+	#mobile-header {
+		display: none;
+	}
+	#header {
+		display: block;
+	}
+
+	#floor ul li {
+		width: calc(98%/4);
+	}
+	#floor .overlay-heading {
+    	font-size: 12px;
+    }
+    #home {
+		margin-top: 0;
+	}
+}
+
+@media(min-width: 1200px) {
+	#footer {
+		display: block;
+	}
+	#mobile-footer {
+		display: none;
+	}
+	footer {
+    	background-color: black;
+    }
+    #contact-us .left-side {
+		border-right: 1px solid #586376;
+		margin-left: 24%;
+		padding-right: 14%;
+	}
+
+	#contact-us .left-side h4 {
+		margin-bottom: 20px;
+	}
+
+	#contact-us .right-side {
+		padding-left: 10%;
+		margin-right: 24%;
+	}
+
+	#floor ul li {
+		width: calc(98%/5);
+	}
+
+	#floor .overlay-heading {
+    	font-size: 14px;
+    }
+    #home {
+		margin-top: 0;
+	}
+}
+
