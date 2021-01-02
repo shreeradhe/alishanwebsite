@@ -25,6 +25,11 @@ h1, h2, h3, h4, h4, h6{
     line-height: 24px;
 }
 
+p {
+	margin: 0;
+	padding: 0;
+}
+
 a {
     text-decoration: none!important;
 }
@@ -73,7 +78,7 @@ ul a li.header-navbar-list-item:hover {
 }
 
 #overview .details {
-	margin-top: 15%;
+	margin-top: 10%;
 	margin-left: 10%;
 }
 
@@ -93,14 +98,13 @@ ul a li.header-navbar-list-item:hover {
 #overview h4 {
 	font-size: 13px;
     font-weight: 600;
-    
 }
 
 #overview p{
 	font-size: 13px;
 	font-weight: 500;
 	line-height: 30px;
-	margin-top: 30px;
+	margin: 16px 0;
 }
 
 #overview ul {
@@ -110,7 +114,7 @@ ul a li.header-navbar-list-item:hover {
 #overview ul li {
 	font-size: 13px;
 	line-height: 18px;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 	font-weight: 500;
 }
 
@@ -147,7 +151,7 @@ ul a li.header-navbar-list-item:hover {
 }
 
 #amenities .details {
-	margin-top: 12%;
+	margin-top: 10%;
 }
 
 #amenities .details h3{
