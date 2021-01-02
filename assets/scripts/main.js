@@ -23,6 +23,10 @@ document.getElementById("mobile-header-icon").addEventListener("click", function
 	document.getElementById("mobile-header-icon").classList.toggle("mobile-header-icon-close");
 });
 
-
+$(window).scroll(function() {
+	$("location-map-image").css({
+		transform: scale(1.4);
+	})
+})
 
 
