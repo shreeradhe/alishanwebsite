@@ -46,7 +46,7 @@
 		                    <a class="menu-item-link" href="#contact-us">Contact Us</a>
 		                </li>
 		                <li class="mobile-menu-list-item">
-		                    <a class="menu-item-link" href="#">Download Brochure</a>
+		                    <a class="menu-item-link" href="#" data-toggle="modal" data-target="#enquiryModal">Download Brochure</a>
 		                </li>
 		            </ul>
 		        </nav>
@@ -81,7 +81,7 @@
 									<li class="header-navbar-list-item">Contact Us</li>
 								</a>
 								<a href="#">
-									<li class="header-navbar-list-item">Download Brochure</li>
+									<li class="header-navbar-list-item" data-toggle="modal" data-target="#enquiryModal">Download Brochure</li>
 								</a>
 							</ul>
 						</nav>	
@@ -457,7 +457,7 @@
 						<div class="col">
 							<a href="" class="btn-enquiry" data-toggle="modal" data-target="#enquiryModal">
 								<img src="assets/images/enq.png">
-								<span>Enquir now</span>
+								<span>Enquire now</span>
 							</a>
 						</div>
 					</div>
@@ -471,13 +471,13 @@
 					<div class="col-md-10">
 						<form id="contact-form" action="email.php" method="POST" class="form-inline footer-form">
 				          	<div class="form-group name">
-				            	<input type="text" class="form-control" name="name" id="name" placeholder="Name*">
+				            	<input type="text" class="form-control" name="name" id="name" placeholder="Name*" required>
 				          	</div>
 				          	<div class="form-group phone">
-				            	<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*">
+				            	<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*" required minlength="10" maxlength="10">
 				          	</div>
 				          	<div class="form-group email">
-				            	<input type="email" class="form-control" name="email" id="email" placeholder="Email*">
+				            	<input type="email" class="form-control" name="email" id="email" placeholder="Email*" required>
 				          	</div>
 				          	<input type="submit" class="btn-footer-send" name="contact-info" value="Send">
 				        </form>
@@ -504,13 +504,13 @@
 			      		<p>Fill In Your Details To Submit Your Enquiry</p>
 			        	<form id="contact-form" action="email.php" method="POST">
 				          	<div class="form-group">
-				            	<input type="text" class="form-control" name="name" id="name" placeholder="Name*" required>
+				            	<input type="text" class="form-control" name="name" id="modal-name" placeholder="Name*" required>
 				          	</div>
 				          	<div class="form-group">
 				            	<input type="tel" class="form-control" name="phone" id="modal-phone" placeholder="Phone*" required minlength="10" maxlength="10">
 				          	</div>
 				          	<div class="form-group">
-				            	<input type="email" class="form-control" name="email" id="email" placeholder="Email*" required>
+				            	<input type="email" class="form-control" name="email" id="modal-email" placeholder="Email*" required>
 				          	</div>
 				          	<input type="submit" class="btn-send" name="contact-info" value="Send">
 				        </form>

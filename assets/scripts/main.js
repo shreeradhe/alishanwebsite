@@ -56,3 +56,9 @@ $(document).ready(function() {
 		return /^\d*$/.test(value); 
 	});
 });
+
+$(document).ready(function() {
+	$("#phone").inputFilter(function(value) {
+		return /^\d*$/.test(value); 
+	});
+});
