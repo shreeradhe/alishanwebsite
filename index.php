@@ -468,26 +468,27 @@
 					<div class="col-md-2">
 						<a href="https://api.whatsapp.com/send?phone=919004527554" class="btn-wp"><img src="assets/images/wp-desktop.png"></a>
 					</div>
-					<div class="col-md-8">
-						<form class="form-inline footer-form">
+					<div class="col-md-10">
+						<form id="contact-form" action="email.php" method="POST" class="form-inline footer-form">
 				          	<div class="form-group name">
-				            	<input type="text" class="form-control" id="name" placeholder="Name*">
+				            	<input type="text" class="form-control" name="name" id="name" placeholder="Name*">
 				          	</div>
 				          	<div class="form-group phone">
-				            	<input type="text" class="form-control" id="phone" placeholder="Phone*">
+				            	<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*">
 				          	</div>
 				          	<div class="form-group email">
-				            	<input type="email" class="form-control" id="email" placeholder="Email*">
+				            	<input type="email" class="form-control" name="email" id="email" placeholder="Email*">
 				          	</div>
+				          	<input type="submit" class="btn-footer-send" name="contact-info" value="Send">
 				        </form>
-					</div>
-					<div class="col-md-2">
-						<a href="#" type="button" class="btn-footer-send">Send</a>
 					</div>
 				</div>
 			</div>
 		</footer>
-		
+		<!-- Button trigger modal -->
+		<button type="button" id="modalBtn" class="btn btn-primary" data-toggle="modal" data-target="#enquiryModal" hidden="true">
+		  Launch demo modal
+		</button>
 
 		<!-- Modal -->
 		<div class="modal fade" id="enquiryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -501,18 +502,18 @@
 		      		</div>
 			      	<div class="modal-body">
 			      		<p>Fill In Your Details To Submit Your Enquiry</p>
-			        	<form>
+			        	<form id="contact-form" action="email.php" method="POST">
 				          	<div class="form-group">
-				            	<input type="text" class="form-control" id="name" placeholder="Name*">
+				            	<input type="text" class="form-control" name="name" id="name" placeholder="Name*">
 				          	</div>
 				          	<div class="form-group">
-				            	<input type="text" class="form-control" id="phone" placeholder="Phone*">
+				            	<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*">
 				          	</div>
 				          	<div class="form-group">
-				            	<input type="email" class="form-control" id="email" placeholder="Email*">
+				            	<input type="email" class="form-control" name="email" id="email" placeholder="Email*">
 				          	</div>
+				          	<input type="submit" class="btn-send" name="contact-info" value="Send">
 				        </form>
-			        	<a href="" type="button" class="btn-send">Send</a>
 			      	</div>
 		    	</div>
 		  	</div>

@@ -401,6 +401,7 @@ ul a li.header-navbar-list-item:hover {
 }
 
 .btn-send {
+	cursor: pointer;
 	background-color: #103d61;
 	color: #ffffff;
 	font-weight: 400;
@@ -435,6 +436,7 @@ footer {
 
 
 .btn-footer-send {
+	background: transparent;
 	font-size: 15px;
 	text-transform: uppercase;
 	border: 1px solid #ffffff;
@@ -442,6 +444,7 @@ footer {
 	padding: 5px 45px;
 	color: #ffffff;
 	margin-top: 6px;
+	margin-left: 60px;
 }
 
 .btn-footer-send:hover {

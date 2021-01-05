@@ -1,6 +1,6 @@
 $('a').smoothScroll();
 
-// openModal();
+openModal();
 
 // setInterval(function openModal() {
 // 	document.getElementById("modalBtn").click();
