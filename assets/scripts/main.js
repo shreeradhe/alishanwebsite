@@ -17,6 +17,17 @@ $(window).scroll(function() {
   	})
 })
 
+$('ul li').click(function(e) {
+    e.preventDefault();
+    $('li').removeClass('active');
+    $(this).addClass('active');
+});
+
+$(".menu-item-link").on("click", function(){
+	$("#mobile-menu").removeClass("mobile-menu-active");
+	$("#mobile-header-icon").removeClass("mobile-header-icon-close");
+	$(".menu-item-link").removeClass("active");
+})
 
 document.getElementById("mobile-header-icon").addEventListener("click", function() {
 	document.getElementById("mobile-menu").classList.toggle("mobile-menu-active");

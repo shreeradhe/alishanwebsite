@@ -73,6 +73,10 @@ ul a li.header-navbar-list-item:hover {
 	font-weight: 200;
 }
 
+.active {
+	color: #9e7f32!important;
+}
+
 #overview {
 	background-color: #E7F3F8;
 }
