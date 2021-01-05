@@ -89,12 +89,6 @@ ul a li.header-navbar-list-item:hover {
 	margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1300px) {
-	#overview h3 {
-		font-size: 24px;
-	}
-}
-
 #overview h4 {
 	font-size: 13px;
     font-weight: 600;
@@ -317,44 +311,66 @@ ul a li.header-navbar-list-item:hover {
 	/*z-index: -1;*/
 }
 
-
 #contact-us {
-	background-color: #E4E8EA;
-	padding-bottom: 10%;
+	background-color: #212121;
+	height: 100%;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	color: #ffffff;
+	margin-bottom: 40px;
+	padding-top: 50px;
+	padding-bottom: 100px;
 }
 
 #contact-us h3 {
-	color: #586376;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 600;
 	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding-bottom: 40px;
 }
 
 #contact-us h4 {
 	font-size: 16px;
 	font-weight: 600;
+	margin-bottom: 20px;
 }
-
 
 #contact-us p {
 	font-size: 13px;
 	font-weight: 500;
+	text-align: justify;
 }
 
-#contact-us .part {
-	text-align: center;
-	padding-top: 10%;
-	padding-bottom: 10%;
+#contact-us .btn-info {
+	background-color: #72057E;
+	border-color: #72057E;
+	font-size: 15px;
+}
+#contact-us .btn-info:hover {
+	background-color: #000;
+	border-color: #000;
 }
 
-
-
-#contact-us hr {
-	background-color: #586376;
+#contact-us .center-part {
+	padding: 0 60px;
+}
+#contact-us .left-part {
+	padding: 0 0 0 120px;
+}
+#contact-us .center-part p {
 	margin-bottom: 30px;
-	margin-top: 30px;
+}
+#contact-us .right-part {
+	padding: 0 120px 0 0;
+}
+#contact-us .right-part p {
+	text-align: left;
+}
+#contact-us .border-btm {
+	border-bottom: 2px solid white;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
 }
 
 .modal-header h5 {

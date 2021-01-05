@@ -176,8 +176,23 @@
   		margin-bottom: 10%;
     }
 
-    #contact-us .part {
-    	padding: 40px 80px;
+    #contact-us .center-part {
+        padding: 0 40px;
+        margin-bottom: 40px;
+    }
+    #contact-us .left-part {
+        margin: 10px 40px 40px 40px;
+        padding: 0;
+    }
+    #contact-us .center-part p {
+        margin-bottom: 30px;
+    }
+    #contact-us .right-part {
+        padding: 0;
+        margin: 10px 40px 40px 40px;
+    }
+    #contact-us .right-part p {
+        text-align: left;
     }
 
     #floor ul li {
@@ -206,6 +221,24 @@
     #home {
 		margin-top: 0;
 	}
+    #contact-us .center-part {
+        padding: 0 40px;
+        margin-bottom: 40px;
+    }
+    #contact-us .left-part {
+        margin: 10px 40px 40px 40px;
+        padding: 0;
+    }
+    #contact-us .center-part p {
+        margin-bottom: 30px;
+    }
+    #contact-us .right-part {
+        padding: 0;
+        margin: 10px 40px 40px 40px;
+    }
+    #contact-us .right-part p {
+        text-align: left;
+    }
 }
 
 @media(min-width: 1200px) {
@@ -218,21 +251,23 @@
 	footer {
     	background-color: black;
     }
-    #contact-us .left-side {
-		border-right: 1px solid #586376;
-		margin-left: 24%;
-		padding-right: 14%;
-	}
-
-	#contact-us .left-side h4 {
-		margin-bottom: 20px;
-	}
-
-	#contact-us .right-side {
-		padding-left: 10%;
-		margin-right: 24%;
-	}
-
+    #contact-us .center-part {
+        padding: 0 60px;
+    }
+    #contact-us .left-part {
+        padding: 0 0 0 120px;
+        margin: 0;
+    }
+    #contact-us .center-part p {
+        margin-bottom: 30px;
+    }
+    #contact-us .right-part {
+        padding: 0 120px 0 0;
+        margin: 0;
+    }
+    #contact-us .right-part p {
+        text-align: left;
+    }
 	#floor ul li {
 		width: calc(98%/5);
 	}
