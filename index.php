@@ -504,13 +504,13 @@
 			      		<p>Fill In Your Details To Submit Your Enquiry</p>
 			        	<form id="contact-form" action="email.php" method="POST">
 				          	<div class="form-group">
-				            	<input type="text" class="form-control" name="name" id="name" placeholder="Name*">
+				            	<input type="text" class="form-control" name="name" id="name" placeholder="Name*" required>
 				          	</div>
 				          	<div class="form-group">
-				            	<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*">
+				            	<input type="tel" class="form-control" name="phone" id="modal-phone" placeholder="Phone*" required minlength="10" maxlength="10">
 				          	</div>
 				          	<div class="form-group">
-				            	<input type="email" class="form-control" name="email" id="email" placeholder="Email*">
+				            	<input type="email" class="form-control" name="email" id="email" placeholder="Email*" required>
 				          	</div>
 				          	<input type="submit" class="btn-send" name="contact-info" value="Send">
 				        </form>
