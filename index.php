@@ -85,6 +85,10 @@
 								</a>
 							</ul>
 						</nav>	
+						<a href="#" class="enq-float-btn" data-toggle="modal" data-target="#enquiryModal">
+							<i class="fa fa-envelope-o enq-icon"></i>
+							<span class="enq-text">Enquire Now</span>
+						</a>
 					</div>
 					<div class="col-md-2"></div>
 				</div>
@@ -315,7 +319,9 @@
 					<div class="location-map">
 						<ul>
 							<li>
-								<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzQyIiBoZWlnaHQ9IjkwMCI+PC9zdmc+" alt="" draggable="false" class="zoom" title="scroll to zoom image" style="background-repeat: no-repeat; background-image: url(&quot;http://www.saiworldempire.net/google/images/location/img1.jpg&quot;); background-size: 926px 621px; background-position: 0px 0px;" class="location-map-image">
+								<a href="assets/images/location-map.jpg" target="_blank">
+									<img src="assets/images/location-map.jpg" alt="Location Map" draggable="false" class="zoom" title="click to zoom image" class="location-map-image">
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -485,6 +491,8 @@
 				</div>
 			</div>
 		</footer>
+
+		
 		<!-- Button trigger modal -->
 		<button type="button" id="modalBtn" class="btn btn-primary" data-toggle="modal" data-target="#enquiryModal" hidden="true">
 		  Launch demo modal

@@ -1,10 +1,10 @@
 $('a').smoothScroll();
 
-openModal();
+// openModal();
 
 // setInterval(function openModal() {
 // 	document.getElementById("modalBtn").click();
-// }, 50000);
+// }, 30000);
 
 function openModal() {
 	document.getElementById("modalBtn").click();
@@ -15,9 +15,15 @@ $(window).scroll(function() {
   	$(".location-map ul li img").css({
     	width: (100 + scroll/5) +"%"
   	})
+  	if(scroll > 300) {
+  		$(".logo").addClass("moveup");
+  	}
+  	else {
+  		$(".logo").removeClass("moveup");
+  	}
 })
 
-$('ul li').click(function(e) {
+$('#header ul li').click(function(e) {
     e.preventDefault();
     $('li').removeClass('active');
     $(this).addClass('active');
@@ -62,3 +68,4 @@ $(document).ready(function() {
 		return /^\d*$/.test(value); 
 	});
 });
+

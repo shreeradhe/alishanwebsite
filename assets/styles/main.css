@@ -34,6 +34,30 @@ a {
     text-decoration: none!important;
 }
 
+.enq-float-btn {
+	position: fixed;
+	top: 140px;
+	right: -125px;
+	background-color: #7D7D7D;
+	transition: .6s ease-in-out;
+}
+.enq-float-btn:hover {
+	right: 0;
+}
+.enq-icon {
+	padding: 10px 10px;
+	background-color: #9B247D;
+	color: white;
+	margin-right: 10px;
+	font-size: 18px;
+}
+.enq-text {
+	font-size: 13px;
+	font-weight: 500;
+	color: white;
+	margin-right: 30px;
+}
+
 #header {
 	position: fixed;
 	width: 100%;
@@ -42,6 +66,7 @@ a {
 
 .logo {
 	text-align: center;
+	transition: .6s ease;
 }
 
 .logo img{
@@ -75,6 +100,10 @@ ul a li.header-navbar-list-item:hover {
 
 .active {
 	color: #9e7f32!important;
+}
+
+.moveup {
+	transform: translateY(-110px);
 }
 
 #overview {
@@ -302,17 +331,25 @@ ul a li.header-navbar-list-item:hover {
 	transition: .6s ease;
 }
 
+#floor .overlay-details:hover .align-middle {
+	top: 50%;
+}
+
 #floor .zoom-icon {
 	margin-bottom: 10px;
 }
 
+#floor .overlay-details span {
+	font-weight: 500;
+}
+
 #floor .align-middle {
 	position: absolute;
-	top: 50%;
+	top: 120%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #fff;
-	/*z-index: -1;*/
+	transition: .6s ease-in-out;
 }
 
 #contact-us {
