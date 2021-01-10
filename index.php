@@ -28,7 +28,7 @@
 		        <nav class="smooth-scroll">
 		            <ul class="mobile-menu-list"> 
 		                <li class="mobile-menu-list-item">
-		                    <a class="menu-item-link" href="#home">Home</a>
+		                    <a class="menu-item-link active" href="#home">Home</a>
 		                </li>
 		                <li class="mobile-menu-list-item">
 		                    <a class="menu-item-link" href="#overview">Overview</a>
@@ -46,7 +46,7 @@
 		                    <a class="menu-item-link" href="#contact-us">Contact Us</a>
 		                </li>
 		                <li class="mobile-menu-list-item">
-		                    <a class="menu-item-link" href="#">Download Brochure</a>
+		                    <a class="menu-item-link" href="#" data-toggle="modal" data-target="#enquiryModal">Download Brochure</a>
 		                </li>
 		            </ul>
 		        </nav>
@@ -63,7 +63,7 @@
 						<nav class="header-navbar">
 							<ul class="header-navbar-list">
 								<a href="#home">
-									<li class="header-navbar-list-item">Home</li>
+									<li class="header-navbar-list-item active">Home</li>
 								</a>
 								<a href="#overview">
 									<li class="header-navbar-list-item">Overview</li>
@@ -81,10 +81,14 @@
 									<li class="header-navbar-list-item">Contact Us</li>
 								</a>
 								<a href="#">
-									<li class="header-navbar-list-item">Download Brochure</li>
+									<li class="header-navbar-list-item" data-toggle="modal" data-target="#enquiryModal">Download Brochure</li>
 								</a>
 							</ul>
 						</nav>	
+						<a href="#" class="enq-float-btn" data-toggle="modal" data-target="#enquiryModal">
+							<i class="fa fa-envelope-o enq-icon"></i>
+							<span class="enq-text">Enquire Now</span>
+						</a>
 					</div>
 					<div class="col-md-2"></div>
 				</div>
@@ -308,14 +312,16 @@
 								CLOSE PROXIMITY TO SCHOOLS, COLLEGES, MALLS, HOSPITALS & BANKS
 							</li>
 						</ul>
-						<a href="" class="map-btn">Google Map</a>
+						<a href="https://goo.gl/maps/RrYDtDu7sUd3C4n97" target="_blank" class="map-btn">Google Map</a>
 					</div>
 				</div>
 				<div class="col-md-8">
 					<div class="location-map">
 						<ul>
 							<li>
-								<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzQyIiBoZWlnaHQ9IjkwMCI+PC9zdmc+" alt="" draggable="false" class="zoom" title="scroll to zoom image" style="background-repeat: no-repeat; background-image: url(&quot;http://www.saiworldempire.net/google/images/location/img1.jpg&quot;); background-size: 926px 621px; background-position: 0px 0px;">
+								<a href="assets/images/location-map.jpg" target="_blank">
+									<img src="assets/images/location-map.jpg" alt="Location Map" draggable="false" class="zoom" title="click to zoom image" class="location-map-image">
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -333,7 +339,7 @@
 				<div class="col-md-12">
 					<ul>
 						<li class="list-item">
-							<a href="assets/images/floor-plan/pop1.jpg">
+							<a href="assets/images/floor-plan/pop1.jpg" target="_blank">
 								<div class="image-scale">
 									<img src="assets/images/floor-plan/1.jpg">
 								</div>
@@ -347,7 +353,7 @@
 							</a>
 						</li>
 						<li class="list-item">
-							<a href="assets/images/floor-plan/pop2.jpg">
+							<a href="assets/images/floor-plan/pop2.jpg" target="_blank">
 								<div class="image-scale">
 									<img src="assets/images/floor-plan/2.jpg">
 								</div>
@@ -361,7 +367,7 @@
 							</a>
 						</li>
 						<li class="list-item">
-							<a href="assets/images/floor-plan/pop3.jpg">
+							<a href="assets/images/floor-plan/pop3.jpg" target="_blank">
 								<div class="image-scale">
 									<img src="assets/images/floor-plan/3.jpg">
 								</div>
@@ -375,7 +381,7 @@
 							</a>
 						</li>
 						<li class="list-item">
-							<a href="assets/images/floor-plan/pop4.jpg">
+							<a href="assets/images/floor-plan/pop4.jpg" target="_blank">
 								<div class="image-scale">
 									<img src="assets/images/floor-plan/4.jpg">
 								</div>
@@ -388,7 +394,7 @@
 							</a>
 						</li>
 						<li class="list-item">
-							<a href="assets/images/floor-plan/pop5.jpg">
+							<a href="assets/images/floor-plan/pop5.jpg" target="_blank">
 								<div class="image-scale">
 									<img src="assets/images/floor-plan/5.jpg">
 								</div>
@@ -412,33 +418,37 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
-					<div class="part left-side">
+				<div class="col-md-4 left-part">
+					<div class="text-left">
 						<h4>About Paradise Group</h4>
 						<p>
 							With 2 decades of experience, Paradise Group had a very long yet fruitful journey. With their clear aim of providing a lavish and appealing space for all to dwell. They have constructed more than 100 successful projects across Navi Mumbai covering 2.5 million sq. ft till date. This rendezvous of more than 30 years have not only made them a team of highly experienced construction experts but also a perfect specimen of 'beauty with quality'.
 						</p>
 					</div>
 				</div>
-				<hr class="divide">
-				<div class="col-md-6">
-					<div class="part right-side">
-						<h4>Site Address</h4>
+
+				<div class="col-md-4 center-part">
+					<div class="text-left">
+						<h4>Schedule A Visit</h4>
 						<p>
+							Grab your chance to visit the site for Free! And explore more with the property experts. Come and get amused by the luxury and nature amenities in one place. Call now and Book your comfort corner.
+						</p>
+						<a href="#" class="btn btn-info" role="button" data-toggle="modal" data-target="#enquiryModal">Schedule A Visit</a>
+					</div>
+				</div>
+				
+				<div class="col-md-4 right-part">
+					<div class="text-left">
+						<h4>Site Address</h4>
+						<p class="border-btm">
 							Sai World Empire, Sector 36, Kharghar Hill Trail, Kharghar, Maharashtra 410210.
 						</p>
-						<hr>
 						<h4>MahaRERA Registration No.</h4>
 						<p>P51700002446</p>
 					</div>
 				</div>
 			</div>
-			<!-- Button trigger modal -->
-			<button type="button" id="modalBtn" class="btn btn-primary" data-toggle="modal" data-target="#enquiryModal" hidden="true">
-			  Launch demo modal
-			</button>
 		</section>
-
 
 		<footer>
 			<div id="mobile-footer">
@@ -446,14 +456,14 @@
 					<div class="row">
 						<div class="col">
 							<a href="https://api.whatsapp.com/send?phone=919004527554" class="btn-wp">
-								<i class="fa fa-whatsapp fa-2x"></i>
+								<img src="assets/images/wp-mobile.png">
 								<span>Whatsapp</span>
 							</a>
 						</div>
 						<div class="col">
 							<a href="" class="btn-enquiry" data-toggle="modal" data-target="#enquiryModal">
-								<i class="fa fa-envelope-o fa-2x"></i>
-								<span>Enquir now</span>
+								<img src="assets/images/enq.png">
+								<span>Enquire now</span>
 							</a>
 						</div>
 					</div>
@@ -462,28 +472,31 @@
 			<div id="footer" class="container">
 				<div class="row">
 					<div class="col-md-2">
-						<a href="https://api.whatsapp.com/send?phone=919004527554" class="btn-wp"><i class="fa fa-whatsapp fa-3x"></i></a>
+						<a href="https://api.whatsapp.com/send?phone=919004527554" class="btn-wp"><img src="assets/images/wp-desktop.png"></a>
 					</div>
-					<div class="col-md-8">
-						<form class="form-inline footer-form">
+					<div class="col-md-10">
+						<form id="contact-form" action="email.php" method="POST" class="form-inline footer-form">
 				          	<div class="form-group name">
-				            	<input type="text" class="form-control" id="name" placeholder="Name*">
+				            	<input type="text" class="form-control" name="name" id="name" placeholder="Name*" required>
 				          	</div>
 				          	<div class="form-group phone">
-				            	<input type="text" class="form-control" id="phone" placeholder="Phone*">
+				            	<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*" required minlength="10" maxlength="10">
 				          	</div>
 				          	<div class="form-group email">
-				            	<input type="email" class="form-control" id="email" placeholder="Email*">
+				            	<input type="email" class="form-control" name="email" id="email" placeholder="Email*" required>
 				          	</div>
+				          	<input type="submit" class="btn-footer-send" name="contact-info" value="Send">
 				        </form>
-					</div>
-					<div class="col-md-2">
-						<a href="#" type="button" class="btn-footer-send">Send</a>
 					</div>
 				</div>
 			</div>
 		</footer>
+
 		
+		<!-- Button trigger modal -->
+		<button type="button" id="modalBtn" class="btn btn-primary" data-toggle="modal" data-target="#enquiryModal" hidden="true">
+		  Launch demo modal
+		</button>
 
 		<!-- Modal -->
 		<div class="modal fade" id="enquiryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -497,18 +510,18 @@
 		      		</div>
 			      	<div class="modal-body">
 			      		<p>Fill In Your Details To Submit Your Enquiry</p>
-			        	<form>
+			        	<form id="contact-form" action="email.php" method="POST">
 				          	<div class="form-group">
-				            	<input type="text" class="form-control" id="name" placeholder="Name*">
+				            	<input type="text" class="form-control" name="name" id="modal-name" placeholder="Name*" required>
 				          	</div>
 				          	<div class="form-group">
-				            	<input type="text" class="form-control" id="phone" placeholder="Phone*">
+				            	<input type="tel" class="form-control" name="phone" id="modal-phone" placeholder="Phone*" required minlength="10" maxlength="10">
 				          	</div>
 				          	<div class="form-group">
-				            	<input type="email" class="form-control" id="email" placeholder="Email*">
+				            	<input type="email" class="form-control" name="email" id="modal-email" placeholder="Email*" required>
 				          	</div>
+				          	<input type="submit" class="btn-send" name="contact-info" value="Send">
 				        </form>
-			        	<a href="" type="button" class="btn-send">Send</a>
 			      	</div>
 		    	</div>
 		  	</div>
